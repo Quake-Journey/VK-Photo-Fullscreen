@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+dist/
+*.zip
+.env
+.env.*
+*.pem
+*.key
+*.log
+__pycache__/
+*.pyc

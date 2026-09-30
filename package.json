@@ -1,0 +1,13 @@
+{
+  "name": "vk-photo-fullscreen",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Local Chrome extension for full-screen VK photos with optional local AI enhancement",
+  "scripts": {
+    "build": "node tools/build-ai.cjs",
+    "test": "node tests/tone.test.mjs && node tests/browser.test.cjs && node tests/extension.test.cjs && node tests/enhancement.test.cjs"
+  },
+  "devDependencies": { "esbuild": "0.28.2", "playwright": "1.58.2" },
+  "dependencies": { "@tensorflow/tfjs": "4.11.0", "@upscalerjs/esrgan-slim": "1.0.0", "upscaler": "1.0.0" }
+}
